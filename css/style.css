@@ -81,6 +81,48 @@ h3 {
   color: #111;
   margin-bottom: 1rem;
 }
+
+/* Add to style.css — styles for the new process-steps and highlights-list */
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 32px 0;
+}
+
+.process-step img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 12px;
+}
+
+.process-step h4 {
+  margin-bottom: 6px;
+}
+
+.process-step p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.highlights-list {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.highlights-list li {
+  margin-bottom: 10px;
+}
+
+/* Stack process steps on smaller screens */
+@media (max-width: 768px) {
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+}
+
 footer {
   text-align: center;
   padding: 2rem;
