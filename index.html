@@ -4,6 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lindsay Comeau | Game UI/UX & Level Design Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Lindsay Comeau, Senior Level Designer with 10+ years in game development — level design, UX, and systems design case studies."
+    />
+
+    <!-- Social link previews (LinkedIn, Discord, etc.) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Lindsay Comeau | Game UI/UX & Level Design Portfolio" />
+    <meta
+      property="og:description"
+      content="Senior Level Designer with 10+ years in game development — level design, UX, and systems design case studies."
+    />
+    <meta property="og:url" content="https://lindzco.github.io/" />
+    <meta property="og:image" content="https://lindzco.github.io/images/DASE3Title.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Bootstrap 5 -->
     <link
@@ -34,7 +57,7 @@
           BC, working remotely. Background spans level design, systems design,
           and production leadership across F2P and narrative mobile titles.
           <br /><br />
-          I thrive on turning vision into action—bringing clarity to a user's
+          I thrive on turning vision into action — bringing clarity to a user's
           journey through meticulous UX designs and screen-flows, and crafting
           fun and immersive worlds.
         </p>
@@ -54,10 +77,10 @@
               <img
                 src="images/DASE3Title.png"
                 class="card-img-top"
-                alt="Draw Stickman Epic 3"
+                alt="Draw a Stickman: Epic 3"
               />
               <div class="card-body">
-                <h3 class="card-title h5">Draw Stickman Epic 3</h3>
+                <h3 class="card-title h5">Draw a Stickman: Epic 3</h3>
                 <p class="card-text">
                   Narrative-driven puzzle level design — led design on nine
                   levels blending storytelling, exploration, and environmental
@@ -192,20 +215,21 @@
           <div>
             <h4>4. Greyblocking and Prototyping</h4>
             <p>
-              Once the design was reviewed and approved by the team I began
+              Once the design was reviewed and approved by the team, I began
               greyblocking out the level and prototyping the puzzles and enemies
               in Unity. We used a visual scripting tool for this project that
-              allowed the level designers to work with the games code to create
+              allowed the level designers to work with the game's code to create
               unique puzzles, hazards and enemies.
             </p>
           </div>
-          <div class="ratio ratio-16x9">
-            <video controls>
-              <source
-                src="images/Level_2x1_playthrough.mp4"
-                type="video/mp4"
-                alt="Level 2x1 greyblock walkthrough"
-              />
+          <div class="ratio ratio-16x9 process-video">
+            <video
+              controls
+              preload="metadata"
+              aria-label="Level 2x1 greyblock walkthrough"
+            >
+              <source src="images/Level_2x1_playthrough.mp4" type="video/mp4" />
+              Your browser doesn't support embedded video.
             </video>
           </div>
         </div>
@@ -254,7 +278,7 @@
     <!-- PROJECT 2: CANNA FARM -->
     <section id="project2" class="project-detail">
       <div class="container">
-        <h2>Canna Farm</h2>
+        <h2>Canna Farm — UX Case Studies</h2>
         <p>
           <strong>Overview:</strong> A weed-farming management game blending
           casual and idle mechanics. Led design and production, focusing on user
@@ -264,6 +288,293 @@
           <strong>Contributions:</strong> UI layout design, UX flow mapping,
           level progression, and economy balancing.
         </p>
+        <p>
+          Below are two features I designed as UX Designer on CannaFarm: the
+          Notice Board and the Dispensary.
+        </p>
+
+        <!-- CASE STUDY: NOTICE BOARD -->
+        <div class="case-study">
+          <h3>Case Study: Notice Board Feature</h3>
+          <p class="case-meta">Role: UX Designer</p>
+
+          <figure class="case-figure">
+            <img
+              src="images/Portfolio_CS_NoticeBoard_1.png"
+              alt="CannaFarm key art: Start your weed empire! Notice Board Feature case study title"
+              class="img-fluid lightbox-img"
+              loading="lazy"
+              data-bs-toggle="modal"
+              data-bs-target="#imageLightbox"
+              role="button"
+            />
+          </figure>
+
+          <h4>Feature Overview</h4>
+          <p>
+            The Notice Board centralizes game updates, social interactions, and
+            promotional offers in one place. It was built to improve player
+            retention, engagement, and monetization.
+          </p>
+          <figure class="case-figure">
+            <img
+              src="images/Portfolio_CS_NoticeBoard_2.png"
+              alt="What's New popup wireframe linking to the News Page"
+              class="img-fluid lightbox-img"
+              loading="lazy"
+              data-bs-toggle="modal"
+              data-bs-target="#imageLightbox"
+              role="button"
+            />
+          </figure>
+
+          <h4>Problem Statement and Goals</h4>
+          <p>
+            <strong>Problem:</strong> Players lacked a unified interface for
+            accessing social features, game updates, and promotions.
+          </p>
+          <ol>
+            <li>Increase player retention through timely updates.</li>
+            <li>
+              Enhance social connectivity with features like Discord
+              integration.
+            </li>
+            <li>Boost revenue through targeted special offers.</li>
+          </ol>
+          <figure class="case-figure">
+            <img
+              src="images/Portfolio_CS_NoticeBoard_3.png"
+              alt="Notice Board News Page mockup with Social, News, and Events tabs"
+              class="img-fluid lightbox-img"
+              loading="lazy"
+              data-bs-toggle="modal"
+              data-bs-target="#imageLightbox"
+              role="button"
+            />
+          </figure>
+
+          <h4>Key Features</h4>
+          <ul class="highlights-list">
+            <li>
+              <strong>Social Page</strong> — the default page for social
+              interactions, including Discord integration and social boosts.
+            </li>
+            <li>
+              <strong>News Page</strong> — highlights updates, events, and
+              promotional offers.
+            </li>
+            <li>
+              <strong>Popups on Login</strong> — contextual multi-page popups for
+              timely updates.
+            </li>
+          </ul>
+
+          <h4>Design Process</h4>
+          <ol class="highlights-list">
+            <li>
+              <strong>Research</strong> — identified player pain points and
+              gathered stakeholder feedback.
+            </li>
+            <li>
+              <strong>Screen flows</strong> — created detailed wireframes and
+              mapped the user's path.
+            </li>
+            <li>
+              <strong>Iteration</strong> — refined navigation flow and
+              functionality.
+            </li>
+            <li>
+              <strong>Analytics</strong> — tracked retention, engagement, and
+              revenue.
+            </li>
+          </ol>
+          <p>
+            <strong>Key Performance Indicators:</strong> increase social
+            interactions and task completions, and improve conversion rates for
+            special offers.
+          </p>
+
+          <h4>Wireframes and Screen Flows</h4>
+          <figure class="case-figure">
+            <img
+              src="images/Portfolio_CS_NoticeBoard_7.png"
+              alt="Popup on login screen flow: Special Offer, New Event, and New Update pages"
+              class="img-fluid lightbox-img"
+              loading="lazy"
+              data-bs-toggle="modal"
+              data-bs-target="#imageLightbox"
+              role="button"
+            />
+            <figcaption>
+              <strong>Popup on login.</strong> When several items are active,
+              the Special Offer comes first. Offers and events reappear on login
+              if the player was last seen 24+ hours ago; new updates show only
+              once.
+            </figcaption>
+          </figure>
+          <figure class="case-figure">
+            <img
+              src="images/Portfolio_CS_NoticeBoard_8.png"
+              alt="Social Page screen flow for connecting to Discord and visiting friends' farms"
+              class="img-fluid lightbox-img"
+              loading="lazy"
+              data-bs-toggle="modal"
+              data-bs-target="#imageLightbox"
+              role="button"
+            />
+            <figcaption>
+              <strong>Social Page: Connect to Discord walkthrough.</strong> From
+              the farm, through the Discord invite, to the friends list and
+              visiting other players' farms.
+            </figcaption>
+          </figure>
+          <figure class="case-figure">
+            <img
+              src="images/Portfolio_CS_Noticeboard_9.png"
+              alt="News Page flow, post detail layouts, and Special Offer contextual HUD button"
+              class="img-fluid lightbox-img"
+              loading="lazy"
+              data-bs-toggle="modal"
+              data-bs-target="#imageLightbox"
+              role="button"
+            />
+            <figcaption>
+              <strong>News Page and Special Offer contextual button.</strong>
+              Post layouts with and without images, and a HUD button that
+              appears when a special offer is live.
+            </figcaption>
+          </figure>
+
+          <h4>Final In-Game Popup</h4>
+          <figure class="case-figure">
+            <img
+              src="images/Portfolio_CS_NoticeBoard_6.png"
+              alt="Shipped What's New popup in CannaFarm showing the 2.20 update"
+              class="img-fluid lightbox-img"
+              loading="lazy"
+              data-bs-toggle="modal"
+              data-bs-target="#imageLightbox"
+              role="button"
+            />
+          </figure>
+        </div>
+
+        <!-- CASE STUDY: DISPENSARY -->
+        <div class="case-study">
+          <h3>Case Study: Dispensary Feature</h3>
+          <p class="case-meta">Role: UX Designer</p>
+
+          <figure class="case-figure">
+            <img
+              src="images/Portfolio_CS_Dispensary%20(1).png"
+              alt="CannaFarm key art: Grow your business! Dispensary Feature case study title"
+              class="img-fluid lightbox-img"
+              loading="lazy"
+              data-bs-toggle="modal"
+              data-bs-target="#imageLightbox"
+              role="button"
+            />
+          </figure>
+
+          <h4>Feature Overview</h4>
+          <p>
+            The Dispensary is a 3D in-game hub where players take part in the
+            CannaFarm economy by buying and selling items. Players can sell
+            products to other players and to visiting NPC Patrons. The feature
+            was meant to draw players into the online community and grow
+            CannaFarm's social features.
+          </p>
+          <figure class="case-figure">
+            <img
+              src="images/Portfolio_CS_Dispensary%20(2).png"
+              alt="The Dispensary building on the player's farm"
+              class="img-fluid lightbox-img"
+              loading="lazy"
+              data-bs-toggle="modal"
+              data-bs-target="#imageLightbox"
+              role="button"
+            />
+          </figure>
+
+          <h4>Problem Statement and Goals</h4>
+          <p>
+            <strong>Problem:</strong> Players lacked a centralized, immersive
+            space for engaging with the CannaFarm economy.
+          </p>
+          <ol>
+            <li>Create a virtual space to enhance player engagement.</li>
+            <li>Promote buying and selling of player-produced items.</li>
+            <li>
+              Strengthen the in-game economy through interaction with NPCs and
+              other players.
+            </li>
+          </ol>
+          <figure class="case-figure">
+            <img
+              src="images/Portfolio_CS_Dispensary%20(3).png"
+              alt="Dispensary interior with sale slots and unlockable counters"
+              class="img-fluid lightbox-img"
+              loading="lazy"
+              data-bs-toggle="modal"
+              data-bs-target="#imageLightbox"
+              role="button"
+            />
+          </figure>
+
+          <h4>Key Features</h4>
+          <ul class="highlights-list">
+            <li>
+              <strong>3D Hub</strong> — a virtual cannabis café for buying and
+              selling player items.
+            </li>
+            <li>
+              <strong>NPC Transactions</strong> — sell items to visiting NPC
+              Patrons.
+            </li>
+            <li>
+              <strong>Drag-and-Drop Interface</strong> — simplified UI for
+              selecting and selling items.
+            </li>
+            <li>
+              <strong>Player Economy</strong> — highlights and encourages trade
+              of player-produced goods.
+            </li>
+          </ul>
+
+          <h4>Wireframes and Screen Flows</h4>
+          <figure class="case-figure">
+            <img
+              src="images/Portfolio_CS_Dispensary%20(5).png"
+              alt="Full Dispensary feature walkthrough screen flow"
+              class="img-fluid lightbox-img"
+              loading="lazy"
+              data-bs-toggle="modal"
+              data-bs-target="#imageLightbox"
+              role="button"
+            />
+            <figcaption>
+              <strong>Full feature walkthrough.</strong> Entering the
+              Dispensary, unlocking slots, putting items up for sale, boosting
+              profits, and interacting with items for sale.
+            </figcaption>
+          </figure>
+          <figure class="case-figure">
+            <img
+              src="images/Portfolio_CS_Dispensary%20(6).png"
+              alt="Selling items screen flow with drag-and-drop sale slots"
+              class="img-fluid lightbox-img"
+              loading="lazy"
+              data-bs-toggle="modal"
+              data-bs-target="#imageLightbox"
+              role="button"
+            />
+            <figcaption>
+              <strong>Selling items.</strong> Drag an item into an empty slot,
+              set quantity and price, and confirm. Also covers the
+              empty-inventory state, which sends players back to the farm.
+            </figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
@@ -284,11 +595,17 @@
     </section>
 
     <footer>
-      <p>© 2025 Lindsay Comeau | Designed &amp; Built by Lindsay Comeau</p>
+      <p>© 2026 Lindsay Comeau | Designed &amp; Built by Lindsay Comeau</p>
     </footer>
 
     <!-- Image Lightbox Modal (reused by all clickable images) -->
-    <div class="modal fade" id="imageLightbox" tabindex="-1" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="imageLightbox"
+      tabindex="-1"
+      aria-label="Enlarged image"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content bg-transparent border-0">
           <button
@@ -311,10 +628,23 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const lightboxImage = document.getElementById("lightboxImage");
+        const lightbox = bootstrap.Modal.getOrCreateInstance(
+          document.getElementById("imageLightbox")
+        );
         document.querySelectorAll(".lightbox-img").forEach(function (img) {
+          img.tabIndex = 0;
           img.addEventListener("click", function () {
             lightboxImage.src = img.src;
             lightboxImage.alt = img.alt;
+          });
+          // Keyboard users: Enter/Space opens the lightbox like a click
+          img.addEventListener("keydown", function (e) {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              lightboxImage.src = img.src;
+              lightboxImage.alt = img.alt;
+              lightbox.show(img);
+            }
           });
         });
       });

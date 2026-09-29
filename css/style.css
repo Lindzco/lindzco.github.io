@@ -1,10 +1,13 @@
 /* Custom overrides — loaded after Bootstrap, so these take precedence */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", sans-serif;
   color: #1c1c1c;
   background: #fafafa;
-  scroll-behavior: smooth;
 }
 
 h1, h2, h3 {
@@ -95,11 +98,55 @@ h1, h2, h3 {
   opacity: 0.85;
 }
 
+.lightbox-img:focus-visible {
+  outline: 3px solid #0d6efd;
+  outline-offset: 3px;
+}
+
+/* Match the video to the process-step images */
+.process-video {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
 .process-step h4 {
   margin-bottom: 6px;
 }
 
 .process-step p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* CASE STUDIES (Canna Farm) */
+.case-study {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e5e5e5;
+}
+
+.case-study h4 {
+  margin-top: 2rem;
+}
+
+.case-meta {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.case-figure {
+  margin: 1.5rem 0;
+}
+
+.case-figure img {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.case-figure figcaption {
+  margin-top: 0.75rem;
   font-size: 0.95rem;
   color: #555;
 }
