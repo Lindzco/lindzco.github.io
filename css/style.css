@@ -145,6 +145,21 @@ h1, h2, h3 {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+.case-figure-narrow img {
+  max-width: 420px;
+}
+
+/* Only vertical margins, so Bootstrap's row gutters stay intact */
+.screenshot-row {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.screenshot-row img {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 .case-figure figcaption {
   margin-top: 0.75rem;
   font-size: 0.95rem;

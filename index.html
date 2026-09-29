@@ -123,8 +123,8 @@
               <div class="card-body">
                 <h3 class="card-title h5">Critter Fu</h3>
                 <p class="card-text">
-                  Match-3 kung fu adventure – UI, UX, and player feedback
-                  systems.
+                  Multiplayer kung fu puzzle fighter – owned the UX, systems,
+                  and gameplay design as Product Designer and Product Manager.
                 </p>
               </div>
             </a>
@@ -550,16 +550,216 @@
     <!-- PROJECT 3: CRITTER FU -->
     <section id="project3" class="project-detail">
       <div class="container">
-        <h2>Critter Fu</h2>
-        <p>
-          <strong>Overview:</strong> A vibrant match-3 kung fu game. Designed
-          combat HUD elements and integrated player feedback animations for
-          enhanced engagement.
+        <h2>Critter Fu — Product Design Case Study</h2>
+        <p class="case-meta">
+          Web-based mobile mini-game · Role: Product Designer, Product Manager
         </p>
+
+        <div class="row g-3 screenshot-row">
+          <div class="col-6 col-md-3">
+            <img
+              src="images/CritterFu/BoxCritters_MainMenu.PNG"
+              alt="Project Critter Fu start screen"
+              class="img-fluid lightbox-img"
+              loading="lazy"
+              data-bs-toggle="modal"
+              data-bs-target="#imageLightbox"
+              role="button"
+            />
+          </div>
+          <div class="col-6 col-md-3">
+            <img
+              src="images/CritterFu/BC_KungFu_MainMenu.PNG"
+              alt="Main menu showing rank, Kung Fu stance, moves, and Ranked or Practice modes"
+              class="img-fluid lightbox-img"
+              loading="lazy"
+              data-bs-toggle="modal"
+              data-bs-target="#imageLightbox"
+              role="button"
+            />
+          </div>
+          <div class="col-6 col-md-3">
+            <img
+              src="images/CritterFu/BC_KungFu_MatchMaking.PNG"
+              alt="Match-making screen with both players ready and a battle countdown"
+              class="img-fluid lightbox-img"
+              loading="lazy"
+              data-bs-toggle="modal"
+              data-bs-target="#imageLightbox"
+              role="button"
+            />
+          </div>
+          <div class="col-6 col-md-3">
+            <img
+              src="images/CritterFu/BC_KungFu_Gameplay2.PNG"
+              alt="Battle in the dojo with the attack, block, and counter tile grid"
+              class="img-fluid lightbox-img"
+              loading="lazy"
+              data-bs-toggle="modal"
+              data-bs-target="#imageLightbox"
+              role="button"
+            />
+          </div>
+        </div>
+
         <p>
-          <strong>Contributions:</strong> UI animation design, level pacing, and
-          player state indicators for mobile UX.
+          I owned the design for every part of the product: the UX, systems,
+          and gameplay. As Product Manager, I used a lightweight agile process
+          to guide the team through rapid prototyping, manage project scope,
+          and maintain client and stakeholder relationships.
         </p>
+
+        <h3>Concept</h3>
+        <p>
+          Box Critters Kung Fu is a kung-fu-themed, multiplayer puzzle fighting
+          game. Players fight martial arts battles by dragging and connecting
+          tiles on a grid, launching attacks and counters in a fast match-3
+          format.
+        </p>
+        <ul class="highlights-list">
+          <li>
+            <strong>Target market</strong> — players aged 8+, with an emphasis
+            on engagement and fast-paced gameplay.
+          </li>
+          <li>
+            <strong>Session length</strong> — 3–5 minutes per game, balancing
+            accessibility and depth.
+          </li>
+          <li>
+            <strong>Platform</strong> — HTML5 stand-alone mini-game.
+          </li>
+          <li>
+            <strong>Monetization</strong> — free-to-play, with room to monetize
+            through progression and customization.
+          </li>
+        </ul>
+
+        <h3>Core Loop</h3>
+        <p>
+          Battles earn experience and rank. Ranking up unlocks new Kung Fu
+          stances and moves, which give players more power and strategy to take
+          back into battle.
+        </p>
+        <figure class="case-figure case-figure-narrow">
+          <img
+            src="images/CritterFu/Core-loop.jpg"
+            alt="Core loop diagram: Gameplay earns experience and rank, which unlocks stances and moves in Progression and Customization"
+            class="img-fluid d-block mx-auto lightbox-img"
+            loading="lazy"
+            data-bs-toggle="modal"
+            data-bs-target="#imageLightbox"
+            role="button"
+          />
+        </figure>
+
+        <h3>Wireframes and Screen Flows</h3>
+        <figure class="case-figure">
+          <img
+            src="images/CritterFu/FTUE.jpg"
+            alt="First-time user experience screen flow from start screen through the first battle"
+            class="img-fluid lightbox-img"
+            loading="lazy"
+            data-bs-toggle="modal"
+            data-bs-target="#imageLightbox"
+            role="button"
+          />
+          <figcaption>
+            <strong>First-time user experience.</strong> From the start screen
+            through the first practice battle to the results screen. Tiles drop
+            more slowly during the FTUE, and offensive tiles drop first so new
+            players learn to attack before they learn to defend.
+          </figcaption>
+        </figure>
+        <figure class="case-figure">
+          <img
+            src="images/CritterFu/Combat.jpg"
+            alt="Combat walkthrough screen flow showing tile chains, combos, move queue, and end-of-round screens"
+            class="img-fluid lightbox-img"
+            loading="lazy"
+            data-bs-toggle="modal"
+            data-bs-target="#imageLightbox"
+            role="button"
+          />
+          <figcaption>
+            <strong>Combat walkthrough.</strong> Linking tiles fills the energy
+            bar and queues moves. Longer chains trigger "Nice Combo!" feedback,
+            and more powerful moves start dropping as energy builds. Players
+            choose between waiting for big chains and queuing up quick ones,
+            and get a timing indicator for well-placed blocks and counters.
+          </figcaption>
+        </figure>
+        <figure class="case-figure">
+          <img
+            src="images/CritterFu/Match-makingandPvPBattleModes.jpg"
+            alt="Match-making and PvP battle modes screen flow, including auto battle and results and rewards"
+            class="img-fluid lightbox-img"
+            loading="lazy"
+            data-bs-toggle="modal"
+            data-bs-target="#imageLightbox"
+            role="button"
+          />
+          <figcaption>
+            <strong>Match-making and PvP battle modes.</strong> Practice (AI),
+            Ranked (PvP), and Auto Ranked modes; the pre-battle ready check and
+            countdown; auto-battle progress; and the results, XP, and rank-up
+            screens.
+          </figcaption>
+        </figure>
+        <figure class="case-figure">
+          <img
+            src="images/CritterFu/ProgressionandCustomization.jpg"
+            alt="Player progression and customization screen flow for nickname, stances, and moves"
+            class="img-fluid lightbox-img"
+            loading="lazy"
+            data-bs-toggle="modal"
+            data-bs-target="#imageLightbox"
+            role="button"
+          />
+          <figcaption>
+            <strong>Progression and customization.</strong> Players edit their
+            nickname, browse and unlock Kung Fu stances by rank, and drag new
+            moves into their loadout. A "new content" badge appears when moves
+            or stances unlock and clears once the player has seen them.
+          </figcaption>
+        </figure>
+
+        <h4>Edge Cases</h4>
+        <div class="row g-4">
+          <div class="col-12 col-md-7">
+            <figure class="case-figure">
+              <img
+                src="images/CritterFu/ConnectionError.jpg"
+                alt="Connection error flows for player disconnect and opponent disconnect"
+                class="img-fluid lightbox-img"
+                loading="lazy"
+                data-bs-toggle="modal"
+                data-bs-target="#imageLightbox"
+                role="button"
+              />
+              <figcaption>
+                <strong>Connection errors.</strong> Auto-reconnect and retry when
+                the player drops, and a clear exit when the opponent leaves.
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-12 col-md-5">
+            <figure class="case-figure">
+              <img
+                src="images/CritterFu/Exit%20Game_QuitBattleScreen.jpg"
+                alt="Exit Game and Quit Battle confirmation screens"
+                class="img-fluid lightbox-img"
+                loading="lazy"
+                data-bs-toggle="modal"
+                data-bs-target="#imageLightbox"
+                role="button"
+              />
+              <figcaption>
+                <strong>Exit game and quit battle.</strong> Confirmation before
+                leaving; the battle keeps running behind the popup.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
       </div>
     </section>
 
