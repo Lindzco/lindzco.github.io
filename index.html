@@ -44,17 +44,23 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body data-bs-spy="scroll" data-bs-target="#quickNav">
-    <!-- QUICK NAV: slides in once the Featured Projects cards are scrolled past -->
-    <nav id="quickNav" class="quick-nav" aria-label="Case studies">
-      <div class="container d-flex align-items-center">
-        <ul class="nav">
+    <!-- QUICK NAV: fixed to the bottom of the screen; ScrollSpy highlights the current section -->
+    <nav
+      id="quickNav"
+      class="navbar fixed-bottom bg-body-tertiary border-top shadow-sm py-1"
+      aria-label="Case studies"
+    >
+      <div class="container">
+        <ul class="nav nav-pills nav-fill flex-nowrap w-100 small">
           <li class="nav-item">
-            <a class="nav-link" href="#project1">Draw a Stickman</a>
+            <a class="nav-link px-2" href="#project1"
+              ><span class="d-none d-sm-inline">Draw a </span>Stickman</a
+            >
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropup">
             <button
               type="button"
-              class="nav-link dropdown-toggle"
+              class="nav-link dropdown-toggle w-100 px-2"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
@@ -62,15 +68,21 @@
             </button>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#project2">Overview</a></li>
-              <li><a class="dropdown-item" href="#noticeboard">Notice Board</a></li>
+              <li>
+                <a class="dropdown-item" href="#noticeboard">Notice Board</a>
+              </li>
               <li><a class="dropdown-item" href="#dispensary">Dispensary</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#project3">Critter Fu</a>
+            <a class="nav-link px-2" href="#project3">Critter Fu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2" href="#about" aria-label="Back to top"
+              >↑ Top</a
+            >
           </li>
         </ul>
-        <a class="quick-nav-top ms-auto" href="#about" aria-label="Back to top">↑ Top</a>
       </div>
     </nav>
 
@@ -868,23 +880,6 @@
             }
           });
         });
-      });
-    </script>
-
-    <!-- Quick nav: show only after the Featured Projects section has scrolled off the top -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const quickNav = document.getElementById("quickNav");
-        const dropdownToggle = quickNav.querySelector(".dropdown-toggle");
-        new IntersectionObserver(function (entries) {
-          const entry = entries[0];
-          const visible =
-            !entry.isIntersecting && entry.boundingClientRect.top < 0;
-          quickNav.classList.toggle("is-visible", visible);
-          if (!visible) {
-            bootstrap.Dropdown.getOrCreateInstance(dropdownToggle).hide();
-          }
-        }).observe(document.getElementById("projects"));
       });
     </script>
   </body>
