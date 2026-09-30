@@ -20,21 +20,45 @@ body {
 }
 
 /* Quick nav colours: black and grey instead of Bootstrap's default blue */
-#quickNav .nav {
-  --bs-nav-link-color: #6c757d;
-  --bs-nav-link-hover-color: #111;
-  --bs-nav-pills-link-active-bg: #111;
-  --bs-nav-pills-link-active-color: #fff;
+#quickNav .nav-link {
+  color: #6c757d !important;
+  background-color: transparent !important;
 }
 
-#quickNav .dropdown-menu {
-  --bs-dropdown-link-active-bg: #111;
-  --bs-dropdown-link-active-color: #fff;
+#quickNav .nav-link:hover,
+#quickNav .nav-link:focus {
+  color: #111 !important;
+}
+
+/* Current section (ScrollSpy), open dropdown, and pressed states */
+#quickNav .nav-link.active,
+#quickNav .nav-link.show,
+#quickNav .nav-link:active,
+#quickNav .show > .nav-link {
+  color: #fff !important;
+  background-color: #111 !important;
+}
+
+#quickNav .dropdown-item {
+  color: #212529 !important;
+  background-color: transparent !important;
+}
+
+#quickNav .dropdown-item:hover,
+#quickNav .dropdown-item:focus {
+  background-color: #e9ecef !important;
+}
+
+#quickNav .dropdown-item.active,
+#quickNav .dropdown-item:active {
+  color: #fff !important;
+  background-color: #111 !important;
 }
 
 #quickNav .nav-link:focus-visible,
 #quickNav .dropdown-item:focus-visible {
-  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.35);
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.35) !important;
 }
 
 /* HERO */
@@ -55,7 +79,7 @@ body {
 }
 
 .skills .badge {
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 500;
   padding: 0.5em 0.9em;
 }
