@@ -50,6 +50,16 @@ body {
   object-fit: cover;
 }
 
+.skills {
+  max-width: 600px;
+}
+
+.skills .badge {
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.5em 0.9em;
+}
+
 .bio {
   max-width: 600px;
   line-height: 1.6;
