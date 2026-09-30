@@ -6,7 +6,7 @@
     <title>Lindsay Comeau | Game UI/UX & Level Design Portfolio</title>
     <meta
       name="description"
-      content="Portfolio of Lindsay Comeau, Senior Level Designer with 10+ years in game development. Level design, UX, and systems design case studies."
+      content="Portfolio of Lindsay Comeau, Senior UI/UX & Level Designer with 10+ years in game development. Level design, UX, and systems design case studies."
     />
 
     <!-- Social link previews (LinkedIn, Discord, etc.) -->
@@ -17,7 +17,7 @@
     />
     <meta
       property="og:description"
-      content="Senior Level Designer with 10+ years in game development. Level design, UX, and systems design case studies."
+      content="Senior Senior UI/UX & Level Designer with 10+ years in game development. Level design, UX, and systems design case studies."
     />
     <meta property="og:url" content="https://lindzco.github.io/" />
     <meta
@@ -43,7 +43,37 @@
     <!-- Custom styles (loaded after Bootstrap so overrides apply) -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#quickNav">
+    <!-- QUICK NAV: slides in once the Featured Projects cards are scrolled past -->
+    <nav id="quickNav" class="quick-nav" aria-label="Case studies">
+      <div class="container d-flex align-items-center">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#project1">Draw a Stickman</a>
+          </li>
+          <li class="nav-item dropdown">
+            <button
+              type="button"
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Canna Farm
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#project2">Overview</a></li>
+              <li><a class="dropdown-item" href="#noticeboard">Notice Board</a></li>
+              <li><a class="dropdown-item" href="#dispensary">Dispensary</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project3">Critter Fu</a>
+          </li>
+        </ul>
+        <a class="quick-nav-top ms-auto" href="#about" aria-label="Back to top">↑ Top</a>
+      </div>
+    </nav>
+
     <!-- HERO / ABOUT -->
     <section id="about" class="hero text-center">
       <div class="container">
@@ -53,19 +83,15 @@
           class="profile-pic rounded-circle mb-3"
         />
         <h1>Lindsay Comeau</h1>
-        <h2 class="text-secondary">Senior Level Designer</h2>
+        <h2 class="text-secondary">Senior UX Designer and Producer</h2>
         <p class="bio mx-auto">
-          Level designer with 10+ years in game development, leading
-          narrative-driven and puzzle-forward level design on shipped, live
-          titles. I design spaces that teach through play: pacing challenges,
-          guiding player attention, and building mechanics that reveal
-          themselves naturally through exploration. Currently based in Quesnel,
-          BC, working remotely. Background spans level design, systems design,
-          and production leadership across F2P and narrative mobile titles.
-          <br /><br />
-          I thrive on turning vision into action: bringing clarity to a user's
-          journey through meticulous UX designs and screen flows, and crafting
-          fun and immersive worlds.
+          Game designer with 10+ years in development, spanning UX design, level
+          design, and production leadership on shipped and live titles. I design
+          spaces that teach through play: pacing challenges, guiding player
+          attention, and building mechanics that reveal themselves naturally
+          through exploration. As a product manager and design department
+          manager, I've led cross-functional teams and shaped data-driven UX
+          across F2P and narrative mobile titles.
         </p>
       </div>
     </section>
@@ -319,7 +345,7 @@
         </p>
 
         <!-- CASE STUDY: NOTICE BOARD -->
-        <div class="case-study">
+        <div id="noticeboard" class="case-study">
           <h3>Case Study: Notice Board Feature</h3>
 
           <h4>Feature Overview</h4>
@@ -466,7 +492,7 @@
         </div>
 
         <!-- CASE STUDY: DISPENSARY -->
-        <div class="case-study">
+        <div id="dispensary" class="case-study">
           <h3>Case Study: Dispensary Feature</h3>
 
           <h4>Feature Overview</h4>
@@ -842,6 +868,23 @@
             }
           });
         });
+      });
+    </script>
+
+    <!-- Quick nav: show only after the Featured Projects section has scrolled off the top -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const quickNav = document.getElementById("quickNav");
+        const dropdownToggle = quickNav.querySelector(".dropdown-toggle");
+        new IntersectionObserver(function (entries) {
+          const entry = entries[0];
+          const visible =
+            !entry.isIntersecting && entry.boundingClientRect.top < 0;
+          quickNav.classList.toggle("is-visible", visible);
+          if (!visible) {
+            bootstrap.Dropdown.getOrCreateInstance(dropdownToggle).hide();
+          }
+        }).observe(document.getElementById("projects"));
       });
     </script>
   </body>
