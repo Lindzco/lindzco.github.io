@@ -1,0 +1,23 @@
+<!--
+  Site navigation (Portfolio / Devlog).
+  index.html is plain HTML (not built by Jekyll), so it has its own copy of
+  this markup. Keep the two in sync.
+-->
+<header class="site-header bg-white border-bottom">
+  <nav class="navbar navbar-expand container" aria-label="Site">
+    <a class="navbar-brand fw-semibold" href="{{ '/' | relative_url }}">Lindsay Comeau</a>
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="{{ '/' | relative_url }}">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link{% if page.url contains '/devlog' %} active{% endif %}"
+          href="{{ '/devlog/' | relative_url }}"
+          {% if page.url contains '/devlog' %}aria-current="page"{% endif %}
+          >Devlog</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>

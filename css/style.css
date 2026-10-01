@@ -15,8 +15,64 @@ h1, h2, h3 {
 }
 
 /* Leave room so the fixed bottom nav (#quickNav) never covers the footer */
-body {
+body.has-quick-nav {
   padding-bottom: 3.5rem;
+}
+
+/* SITE NAV (Portfolio / Devlog), shared by index.html and _includes/site-nav.html */
+.site-header .nav-link.active {
+  font-weight: 600;
+}
+
+/* DEVLOG */
+.devlog {
+  padding: 3rem 1rem 4rem;
+}
+
+.devlog-container {
+  max-width: 800px;
+}
+
+.post-card {
+  color: inherit;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.post-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.post {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.post-content {
+  line-height: 1.7;
+}
+
+.post-content h2,
+.post-content h3 {
+  margin-top: 2rem;
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 575.98px) {
+  .post {
+    padding: 1.5rem;
+  }
 }
 
 /* Quick nav colours: black and grey instead of Bootstrap's default blue */

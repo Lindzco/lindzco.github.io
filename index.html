@@ -43,7 +43,26 @@
     <!-- Custom styles (loaded after Bootstrap so overrides apply) -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#quickNav">
+  <body class="has-quick-nav" data-bs-spy="scroll" data-bs-target="#quickNav">
+    <!--
+      Site navigation (Portfolio / Devlog). The Devlog pages get this from
+      _includes/site-nav.html; this page isn't built by Jekyll, so it keeps
+      its own copy. Keep the two in sync.
+    -->
+    <header class="site-header bg-white border-bottom">
+      <nav class="navbar navbar-expand container" aria-label="Site">
+        <a class="navbar-brand fw-semibold" href="./">Lindsay Comeau</a>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="devlog/">Devlog</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
     <!-- QUICK NAV: fixed to the bottom of the screen; ScrollSpy highlights the current section -->
     <nav
       id="quickNav"

@@ -2,6 +2,15 @@ theme: jekyll-theme-minimal
 title: Lindzco's homepage
 description: Bookmark this to keep an eye on my project updates!
 
+# Devlog posts (_posts/*.md) use the post layout and live under /devlog/
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      permalink: /devlog/:year/:month/:day/:title/
+
 # Keep working/reference files out of the published site
 exclude:
   - images/CF/Reference

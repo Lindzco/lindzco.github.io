@@ -1,0 +1,25 @@
+---
+layout: devlog
+title: Devlog
+description: Devlog by Lindsay Comeau. Notes on UX, level design, and game development.
+---
+<h1>Devlog</h1>
+<p class="case-meta">Notes on UX, level design, and game development.</p>
+
+{% if site.posts.size > 0 %}
+<div class="d-flex flex-column gap-4 mt-4">
+  {% for post in site.posts %}
+  <a class="post-card card text-decoration-none" href="{{ post.url | relative_url }}">
+    <div class="card-body">
+      <p class="case-meta mb-1">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%B %-d, %Y' }}</time>
+      </p>
+      <h2 class="card-title h5">{{ post.title }}</h2>
+      <p class="card-text text-secondary mb-0">{{ post.excerpt | strip_html | truncate: 200 }}</p>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+{% else %}
+<p class="text-secondary mt-4">No posts yet. Check back soon.</p>
+{% endif %}
