@@ -4,13 +4,6 @@ title: Welcome to my devlog
 
 This is the first post on my devlog! Check back in to see updates on my own personal game dev journey as I build a graphic adventure game inspired by games like Oxenfree and old school point-and-click adventures.   
 
-## A section heading
-
-Write in regular Markdown. **Bold**, *italics*, [links](https://lindzco.github.io/), and lists all work:
-
-- First point
-- Second point
-
 <!--
   STARTER POST: replace this text with your own before publishing.
 
