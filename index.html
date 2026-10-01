@@ -967,5 +967,22 @@
         });
       });
     </script>
+
+    <!--
+      Quick nav fix: ScrollSpy only clears .active from elements with an href,
+      so the CannaFarm dropdown <button> would stay highlighted forever.
+      Re-sync it each time ScrollSpy activates a new section.
+    -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggle = document.querySelector("#quickNav .dropdown-toggle");
+        document.body.addEventListener("activate.bs.scrollspy", function (e) {
+          toggle.classList.toggle(
+            "active",
+            e.relatedTarget.classList.contains("dropdown-item"),
+          );
+        });
+      });
+    </script>
   </body>
 </html>
