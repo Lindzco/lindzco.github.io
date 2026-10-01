@@ -2,7 +2,7 @@
 title: Welcome to my devlog
 ---
 
-This is the first post on my devlog. Replace this paragraph with a short intro; it's what appears as the preview on the Devlog page.
+This is the first post on my devlog! Check back in to see updates on my own personal game dev journey as I build a graphic adventure game inspired by games like Oxenfree and old school point-and-click adventures.   
 
 ## A section heading
 
